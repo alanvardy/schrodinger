@@ -41,9 +41,9 @@ For a struct to be valid, it must match _at least one_ valid state and match non
 
 - `valid?/1` returns true / false
 - `valid?/2` returns true / false, the second argument is an atom or list of atoms which define which valid states can be checked. There is no filtering of invalid states. This "tightens" the rules.
-- `validate/1` returns `{:ok, struct}` or `{:error, Schrodinder.Validation{}}` 
+- `validate/1` returns `{:ok, struct}` or `{:error, Schrodinger.Validation{}}` 
 - `validate/2` has the same return values and can be passed a state atom or a list of states just like `valid?/2`
-- `validate!/1` returns `struct` or raises a `Schrodinder.ValidationError{}` 
+- `validate!/1` returns `struct` or raises a `Schrodinger.ValidationError{}` 
 - `validate!/2` has same arguments as `valid?/2`
 
 ## Validation Options
